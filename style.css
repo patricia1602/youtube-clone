@@ -17,7 +17,7 @@ header {
     border-bottom: 2px solid #f2f2f2;
 
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     justify-content: space-between;
     align-items: center;
 }
@@ -43,7 +43,6 @@ header {
     
 }
 main {
-   max-width: 1200px;
     margin: auto;
 
     display: grid;
@@ -77,8 +76,19 @@ main {
     height: 100%;
 }
 .video-info {
-    background-color: #e91e63;
     grid-area: video-info;
+
+    padding: 0 0 1rem 1 rem;
+}
+
+.video-info h1 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+.video-info .view {
+    color: #606060;
 }
 
 .actions {
@@ -88,6 +98,7 @@ main {
 
 .channel {
     background-color: #673ab7;
+    grid-area: channel;
 }
 
 .subscribe {
