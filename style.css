@@ -22,6 +22,11 @@ header {
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+    color: #222;
+}
+
 .logo img {
     width: 100px;
 }
@@ -55,8 +60,7 @@ main {
     margin: auto;
 
     display: grid;
-    grid-row-gap: 1rem; 
-    
+    grid-row-gap: 1rem;    
     grid-template-areas: 
         'video-player  video-player'
         'video-info    video-info'
@@ -134,7 +138,30 @@ main {
   }
   
 .channel {
-    background-color: #673ab7;
+    grid-area: channel;
+
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    grid-gap: 1rem;    
+}
+
+.channel img {
+    width: 48px;
+    border-radius: 50%;
+}
+
+.channel .date {
+    color: #777;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.channel .channel-description{
+    font-size: 0.8rem;
 }
 
 .subscribe {
