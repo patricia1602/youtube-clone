@@ -165,8 +165,11 @@ main {
 }
 
 .subscribe {
-    background-color: #8bc34a;
     grid-area: subscribe;
+
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: right;
 }
 
 .ad {
